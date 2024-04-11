@@ -1,1 +1,1 @@
-## Repositório com os Exercícios de Front-end do Curso Fullstack Python da EBAC
+## Exercício de HTML com JavaScript do Curso Fullstack Python da EBAC
