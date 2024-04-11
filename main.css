@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{ /* aqui estilizamos todos os headers do código*/
+    background-color: aqua;
+}
+
+/* "body > header" iremos estilizar especificamente o header que é filho direto
+de body, o título do site */
+
+body > header{
+    background-color:rgb(121, 197, 50);
+    padding: 16px 0; /* espaçamento de 16px no topo e na parte de baixo e 0 dos lados*/
+    color: azure;
+}
+
+header .container{
+    display: flex; /* Links agora ficam ao lado do título do site*/
+    align-items: center; /* Links agora estão no centro da altura do título*/
+    justify-content: space-between; /* Links em uma extremidade e título na outra*/
+}
+
+/* Links ficam lado a lado*/
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 60px; /* Espaçando os links do menu*/
+}
+
+header li a{
+    color:white;
+    text-decoration: none;
+}
+
+/* Centralização dos containers*/
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+/* Conteudos agora ficam lado a lado*/
+section .articles {
+    display: flex;
+    flex-wrap: wrap; /* esse flex quebra uma linha quando o artigo chega no fim da tela*/
+    justify-content: space-between; /* esse comando espaça os artigos*/
+}
+
+/* limitando a altura máxima das imagens dos artigos !! */
+
+.articles article img{
+    height: 50%;
+    width: 100%;
+}
+
+
+/* Limitando a área dos artigos*/
+
+.articles article {
+    width: 30%;
+}
+
+/* Espaçamento entre as sessões (Esportes e Economia*/
+section {
+    padding: 80px 0;
+}
+
+/* Ao usar a virgula selecionamos mais de um elemento para estilizar */
+/* Aqui selecionamos a tag "article" dentro da classe "articles" */
+/* section h2 são os títulos das sessões e estamos adicionando uma margem abaixo
+deles para espaçarmos eles*/
+/* .articles article cria um espaçamento abaixo dos artigos dentro de suas respectivas
+sessões para não ficaram colados um no outro*/
+
+section h2, .articles article{
+    margin-bottom: 20px;
+}
+
+/* .articles article h3 são os títulos das notícias
+com uma margem em cima e outra em baixo espaçamos eles das suas imagens e conteúdo*/
+.articles article h3{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+/* Estilizando os links dentro dos artigos*/
+
+.articles article a{
+    background-color: rgb(145, 107, 233);
+    color: white;
+    padding: 10px; /*aqui o padding fica em cima do conteúdo do artigo*/
+    display: inline-block; /* assim contornamos esse problema*/
+    text-decoration: none; /* Tirando as underlines dos links*/
+    font-weight: bold; /* Negrito, maior o peso maior a força*/
+    margin-top: 8px;
+}
+
+.articles article a:hover{ /* Quando passar o mouse em cima dos botões de links*/
+    text-decoration: underline; /* eles terão um "underline" */
+}
+
+/* Estilizando a fonte do conteúdo dos artigos*/
+/* ".articles article p" estamos chamando as tags p(paragrafos) dentro dos artigos*/
+
+.articles article p,
+.articles article a{
+    font-family: Arial, Helvetica, sans-serif; /* tenta adicionar fontes dando prioridade as que estão mais a esquerda*/
+}
+
+
+/* Aumentando o tamanho das letras dos titulos dos artigos*/
+
+.articles article h3{
+    font-size: 25px;
+}
+
+
+/* Aumentando o tamanho das letras dos titulos das sessões*/
+
+section h2{
+    font-size: 40px;
+}
+
+#esportes { /* Chamando a sessão de esportes*/
+    background-color: rgba(0, 255, 0, 0.1)
+}
+
+#esportes .articles article a{
+    background-color: rgb(11, 105, 11); /* Background dos links*/
+}
+
+#economia{
+    background-color: rgba(255, 174, 0, 0.233);
+}
+
+#economia .articles article a{
+    background-color: rgba(255, 94, 0, 0.842);
+}
+
+#saude{
+    background-color: rgba(235, 47, 47, 0.384);
+}
+
+#saude .articles article a{
+    background-color: rgba(243, 1, 1, 0.719);
+}
+
+#mundo{
+    background-color: rgba(23, 111, 241, 0.479);
+}
+
+#mundo .articles article a{
+    background-color: rgb(0, 119, 255);
+}

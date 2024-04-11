@@ -1,1 +1,2 @@
-# Repositório com os Exercícios de Front-end do Curso Fullstack Python da EBAC
+# exercicio_css
+ Exercicio de css do curso Fullstack Python da EBAC
