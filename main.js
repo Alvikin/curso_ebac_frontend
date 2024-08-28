@@ -5,7 +5,6 @@ $(document).ready(function() {
     
         const novaTarefa = $('#nova-tarefa').val();
         const addTarefa = $('#lista');
-        /*$('<li>' + addTarefa + '</li>').hide().appendTo(novoItem).fadeIn('slow');*/
         $(`<li>${novaTarefa}</li>`).appendTo(addTarefa);
 
         $(addTarefa).fadeIn('slow');
